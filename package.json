@@ -1,0 +1,48 @@
+{
+  "name": "tecktok",
+  "version": "1.0.0",
+  "description": "TeckTok - TikTok Live Gift Tracker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "tiktok-live-connector": "^2.0.3"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.13.3",
+    "javascript-obfuscator": "^4.1.1"
+  },
+  "build": {
+    "appId": "com.tecktok.live",
+    "productName": "TeckTok",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "extraResources": [
+      "LICENSE.txt",
+      "PRIVACY.txt"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "license": "LICENSE.txt"
+    }
+  },
+  "license": "MIT",
+  "author": "TeckTok"
+}

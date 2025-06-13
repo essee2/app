@@ -1,0 +1,9 @@
+TeckTok Privacy Policy
+
+This application connects to TikTok Live and displays real-time gifts and comments.
+We do NOT collect, store, or transmit any personal information or data.
+
+All data is received live and displayed locally on your device.
+No data is shared with any third-party service.
+
+For questions, contact: support@tecktok.app
